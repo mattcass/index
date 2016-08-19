@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  line-height: 1.6;
+}
+
+@import '~basscss/css/basscss.css';
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+.page {
+  padding: 1em;
+  max-width: 600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.serif {
+  font-family: Lora, Georgia, serif;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: #0575dc;
+  }
+}
+
+blockquote {
+  border-left: 2px solid #DDD;
+  margin-left: 10px;
+  padding: 0.5em 10px;
+}
