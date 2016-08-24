@@ -6,6 +6,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
 
+const app = document.getElementById('app');
+
 
 // JS
 import Nav from './components/navigation.js';
@@ -35,20 +37,27 @@ class App extends React.Component {
 }
 
 class Blog extends React.Component {
+  constructor() {
+    super();
+    this.state = {name: 'Matt!'};
+  }
+
   render() {
     return (
       <div className="mt4 mb4">
+        {this.state.name}
+        <br />
         this is where the blog post would go right....!
       </div>
     )
   }
 }
 
-ReactDOM.render((
+ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Writing} />
       <Route path="/blog" component={Blog} />
     </Route>
-  </Router>
-), document.getElementById('app'))
+  </Router>,
+app);
