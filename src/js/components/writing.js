@@ -5,16 +5,21 @@ import { Link } from 'react-router';
 
 export default class Writing extends React.Component {
   render() {
+    var blogPosts = ['blog post Title', 'Blog post Title number 2', 'another title', 'yet another blog title'];
+
+    var posts = blogPosts.map( function(title, i){
+        
+        var listItem = <li className="mb4" key={ i } >
+                        <Link to="blog" className="h2 bold">{ title }</Link>
+                        <small className="block">Meta data about blog post here</small>
+                      </li> 
+
+        return listItem;
+    });
+
     return (
         <ul className="list-reset mt4" id="writing">
-          <li className="mb4">
-            <Link to="blog" className="h2 bold">Reading List: 2016</Link>
-            <p className="mt0">meta data here</p>
-          </li>
-          <li className="mb4">
-            <Link to="blog" className="h2 bold">Reading List: 2015</Link>
-            <p className="mt0">meta data here</p>
-          </li>
+          { posts } 
         </ul>
     )
   }
