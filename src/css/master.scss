@@ -1,3 +1,7 @@
+
+@import '~basscss/css/basscss.css';
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
 * {
   box-sizing: border-box;
 }
@@ -8,11 +12,13 @@ html {
   line-height: 1.6;
 }
 
-@import '~basscss/css/basscss.css';
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+body {
+  margin: 0;
+}
+
 
 .page {
-  padding: 1em;
+  padding: 2em;
   max-width: 600px;
 }
 
@@ -26,6 +32,10 @@ h6,
   font-family: Lora, Georgia, serif;
   font-weight: bold;
   line-height: 1.25;
+}
+
+ul {
+  margin: 0;
 }
 
 a {
@@ -42,3 +52,4 @@ blockquote {
   margin-left: 10px;
   padding: 0.5em 10px;
 }
+

@@ -1,11 +1,12 @@
-// Import React
+
 import React from 'react';
 import { Link } from 'react-router';
 
 
 export default class Header extends React.Component {
-
   render() {
+
+
     return (
         <header className="mt4">
           <h1 className="inline"><Link to="/">Matthew Casserly</Link></h1>
