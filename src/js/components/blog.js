@@ -4,19 +4,19 @@ import ReactMarkdown from 'react-markdown';
 export default class Blog extends React.Component {
   constructor() {
     super();
-    this.state = {name: 'Matt!'};
+    this.state = { contents: ''  };
+  }
+ 
+  componentDidMount() {
+    const contents = require('html!markdown!../../md/markdown.md');
+    this.setState({ contents })
   }
 
 
   render() {
-
-    var input = '# This is a header\n\nAnd this is a paragraph';
-
     return (
       <div className="mt4 mb4">
-        {this.state.name}
-        <br />
-        <ReactMarkdown source={input} />
+        <ReactMarkdown source={ this.state.contents } />
       </div>
     )
   }
