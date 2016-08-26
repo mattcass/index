@@ -8,15 +8,14 @@ export default class Blog extends React.Component {
   }
  
   componentDidMount() {
-    const contents = require('html!markdown!../../md/markdown.md');
+    const contents = require('html!markdown!../../md/' + this.props.params.article + '.md');
     this.setState({ contents })
   }
-
 
   render() {
     return (
       <div className="mt4 mb4">
-        <ReactMarkdown source={ this.state.contents } />
+        <ReactMarkdown source={ this.state.contents } escapeHhml="true" />
       </div>
     )
   }
