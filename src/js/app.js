@@ -13,7 +13,6 @@ import Index from './components/index.js';
 import Blog from './components/blog.js';
 import Writing from './components/writing.js';
 
-
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={Index}>
