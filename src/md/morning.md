@@ -31,4 +31,6 @@ the product of his actions. Was he addicted to coffee or did the ritual of
 making coffee simply take control long ago? The thought was left hanging as he
 filled a clean mug and took a sip.
 
-<a href="http://www.rcjohnso.com/Looper/Looper.pdf">READ THIS looper script</a>
+<a href="http://www.rcjohnso.com/Looper/Looper.pdf">Looper</a>
+
+<a href="http://lmgtfy.com/?q=the+pragmatic+programmer">The Pragmatic Programmer</a>

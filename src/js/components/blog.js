@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router';
 
 export default class Blog extends React.Component {
   constructor() {
@@ -14,8 +15,14 @@ export default class Blog extends React.Component {
 
   render() {
     return (
-      <div className="mt4 mb4">
-        <ReactMarkdown source={ this.state.contents } escapeHhml="true" />
+      <div>
+        <article className="mt4 mb4">
+          <ReactMarkdown source={ this.state.contents } escapeHhml="true" />
+        </article>
+
+        <Link to="/" className="mb4 block">
+          <span className="pr1">&#8592;</span> Back to Homepage
+        </Link>
       </div>
     )
   }
