@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry: getEntrySources(['./src/js/app.js']),
   output: {
@@ -52,7 +54,14 @@ module.exports = {
         loader: 'markdown'
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
+  ]
 };
 
 function getEntrySources(sources) {
