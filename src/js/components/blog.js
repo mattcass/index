@@ -21,7 +21,7 @@ export default class Blog extends React.Component {
         </article>
 
         <Link to="/" className="mb4 block">
-          <span className="pr1">&#8592;</span> Back to Homepage
+          <span className="pr1">&#8592;</span> Back
         </Link>
       </div>
     )
