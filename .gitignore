@@ -1,5 +1,8 @@
 # NPM
 node_modules/
 
+# Build
+build/
+
 # Mac OSX
 .DS_Store
