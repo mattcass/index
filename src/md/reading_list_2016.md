@@ -4,6 +4,7 @@
   <li class="mb1">Bazan, Emilia Pardo. <em>The House of Ulloa</em>. UK: Penguin Random House, 1886. Print</li>
   <li class="mb1">Bradbury, Ray. <em>Fahrenheit 451</em>. New York: Random House, 1953. Print</li>
   <li class="mb1">Bukowski, Charles. <em>Ham on Rye</em>. Santa Rosa, CA: Black Sparrow Press, 1982. Print</li>
+  <li class="mb1">Chandler, Raymond. <em>The Big Sleep</em>. New York: Random House, 1939. Print</li>
   <li class="mb1">Cline, Ernest. <em>Ready Player One</em>. New York: Broadway Books, 2011. Print</li>
   <li class="mb1">Diaz, Junot. <em>The Brief Wondrous Life of Oscar Wao</em>. New York: Riverhead Books, 2007. Print</li>
   <li class="mb1">Ellis, Bret Easton. <em>Less Than Zero</em>. New York: Simon & Schuster, 1985. Print</li>
